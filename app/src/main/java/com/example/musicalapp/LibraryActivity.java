@@ -15,24 +15,24 @@ public class LibraryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_library);
 
 
-        RelativeLayout songLayout = findViewById(R.id.songClick);
-        RelativeLayout podcastLayout = findViewById(R.id.podcastClick);
-
-        songLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(LibraryActivity.this, SongActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        podcastLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(LibraryActivity.this, PodcastActivity.class);
-                startActivity(intent);
-            }
-        });
+//        RelativeLayout songLayout = findViewById(R.id.songClick);
+//        RelativeLayout podcastLayout = findViewById(R.id.podcastClick);
+//
+//        songLayout.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(LibraryActivity.this, SongActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        podcastLayout.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(LibraryActivity.this, PodcastActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
     }
 }

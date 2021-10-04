@@ -1,68 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
+    android:layout_margin="@dimen/dimen_20"
     tools:context=".LibraryActivity">
 
-    <LinearLayout
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical">
-
-        <RelativeLayout
-            android:id="@+id/songClick"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@color/purple_500"
-            android:gravity="center_vertical"
-            android:padding="10dp">
-
-            <ImageView
-                android:id="@+id/songImage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_headphones" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@id/songImage"
-                android:layout_centerInParent="true"
-                android:layout_marginLeft="60dp"
-                android:text="@string/song"
-                android:textColor="@color/white" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/podcastClick"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="20dp"
-            android:background="@color/purple_500"
-            android:gravity="center_vertical"
-            android:padding="10dp">
-
-            <ImageView
-                android:id="@+id/podcastImage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_podcast" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@id/podcastImage"
-                android:layout_centerInParent="true"
-                android:layout_marginLeft="60dp"
-                android:text="@string/podcast"
-                android:textColor="@color/white" />
-        </RelativeLayout>
-
-    </LinearLayout>
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav" />
 
 
-</LinearLayout>
+</FrameLayout>

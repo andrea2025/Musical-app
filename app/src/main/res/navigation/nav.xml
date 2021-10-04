@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/libraryFragment">
+
+    <fragment
+        android:id="@+id/podcastFragment"
+        android:name="com.example.musicalapp.PodcastFragment"
+        android:label="fragment_podcast"
+        tools:layout="@layout/fragment_podcast" />
+    <fragment
+        android:id="@+id/songFragment"
+        android:name="com.example.musicalapp.SongFragment"
+        android:label="fragment_song"
+        tools:layout="@layout/fragment_song" />
+    <fragment
+        android:id="@+id/libraryFragment"
+        android:name="com.example.musicalapp.LibraryFragment"
+        android:label="fragment_library"
+        tools:layout="@layout/fragment_library" >
+        <action
+            android:id="@+id/action_libraryFragment_to_songFragment2"
+            app:destination="@id/songFragment" />
+        <action
+            android:id="@+id/action_libraryFragment_to_podcastFragment2"
+            app:destination="@id/podcastFragment" />
+    </fragment>
+</navigation>

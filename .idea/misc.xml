@@ -6,9 +6,12 @@
         <entry key="app/src/main/res/drawable/ic_headphones.xml" value="0.27314814814814814" />
         <entry key="app/src/main/res/layout/activity_library.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/layout/activity_podcast.xml" value="0.19537037037037036" />
+        <entry key="app/src/main/res/layout/activity_podcast.xml" value="0.2502163961239584" />
         <entry key="app/src/main/res/layout/activity_song.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/custom_layout.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_library.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_podcast.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_song.xml" value="0.1" />
       </map>
     </option>
   </component>
@@ -21,7 +24,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.2502163961239584" />
+        <option name="scale" value="0.1" />
       </ProjectState>
     </option>
   </component>
